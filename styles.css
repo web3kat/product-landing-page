@@ -1,0 +1,119 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 150%;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.custom-bg a {
+    color: #ffffff;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.custom-bg a:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+main {
+    background: #000000;
+    color: #ffffff;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    height: 100vh;
+    margin: auto;
+    scroll-snap-align: center;
+    display: grid;
+    place-items: center;
+}
+
+video {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    width: 100vw;
+}
+
+h1 {
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-size: 3vw;
+    text-align: center;
+}
+
+h5,
+form {
+    text-align: center;
+}
+
+p {
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+.grow img {
+    transition: 1s ease;
+}
+
+.grow img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+#subscribe {
+    height: calc(100vh - 100px);
+}
+
+.icon-link {
+    padding: 0 10px;
+}
+
+.icon-white {
+    color: #ffffff;
+}
+
+.icon-white:hover {
+    color: #ff0000;
+}
+
+footer {
+    font-size: 10px;
+    padding: 10px;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 576px) {
+    header {
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+}
