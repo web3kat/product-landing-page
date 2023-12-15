@@ -76,6 +76,11 @@ p {
     transition: 1s ease;
 }
 
+.tour {
+    display: flex;
+    flex-direction: column;
+}
+
 #subscribe {
     height: calc(100vh - 100px);
 }
