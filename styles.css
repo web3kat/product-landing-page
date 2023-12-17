@@ -23,6 +23,7 @@ section {
     height: 100vh;
     line-height: 1.4;
     scroll-snap-align: center;
+    padding: 20px;
     place-items: center;
     position: relative;
 }
@@ -55,7 +56,7 @@ h1 {
     text-align: center;
 }
 
-h5 {
+h2 {
     font-family: 'Playfair Display', serif;
     text-align: center;
 }
@@ -88,11 +89,13 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0;
 }
 
 #about-text {
     align-self: end;
     background: rgba(0, 0, 0, 0.75);
+    padding: 10px;
     width: 100%;
 }
 
@@ -132,7 +135,6 @@ footer a:hover {
 @media only screen and (max-width: 800px) {
     section {
         font-size: 16px;
-        padding: 20px;
     }
 
     video {
@@ -149,11 +151,5 @@ footer a:hover {
 
     #about {
         background-size: contain;
-        padding: 0;
     }
-
-    #about-text {
-        padding: 20px;
-    }
-
 }
