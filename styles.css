@@ -78,7 +78,7 @@ p {
 }
 
 #about {
-    background-image: url(LUNASEA.jpg);
+    background-image: url("LUNASEA.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
