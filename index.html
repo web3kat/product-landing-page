@@ -21,7 +21,7 @@
 
 <body>
 
-    <header id=" header">
+    <header id="header">
         <nav id="nav-bar" class="navbar navbar-expand-lg custom-bg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -57,9 +57,10 @@
     <main>
 
         <section id="top">
-            <video src="LUNASEA.webm" type="video/webm" autoplay loop playsinline muted
-                poster="MOTHER_STYLE.jpg"></video>
-            <video src="LUNASEA.mp4" type="video/mp4" autoplay loop playsinline muted poster="MOTHER_STYLE.jpg"></video>
+            <video src="LUNASEA.webm" type="video/webm" autoplay loop playsinline muted poster="MOTHER_STYLE.jpg"
+                id="video"></video>
+            <video src="LUNASEA.mp4" type="video/mp4" autoplay loop playsinline muted poster="MOTHER_STYLE.jpg"
+                id="video"></video>
         </section>
 
         <section id="shop">
@@ -82,7 +83,7 @@
         </section>
 
         <section id="tour">
-            <div class="d-flex flex-column text-center">
+            <div class="tour">
                 <h1>DUAL ARENA TOUR 2023</h1>
                 <h5>MOTHER OF LOVE, MOTHER OF HATE</h5>
                 <h5>UN ENDING STYLE</h5>
@@ -137,7 +138,7 @@
                 <div>
                     <form id="form" action="https://www.freecodecamp.com/email-submit"
                         class="d-flex justify-content-center">
-                        <input id="email" type="email" placeholder="Email">
+                        <input id="email" name="email" type="email" placeholder="Email">
                         </input>
                         <input id="submit" type="submit">
                         </input>

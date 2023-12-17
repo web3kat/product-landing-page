@@ -77,6 +77,12 @@ p {
     transition: 1s ease;
 }
 
+.tour {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 #about {
     background-image: url("LUNASEA.jpg");
     background-position: center;
