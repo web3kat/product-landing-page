@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,15 +16,16 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <title>LUNA SEA</title>
+    <link rel="icon" href="icon.jpg" type="image/jpg">
 </head>
 
 <body>
 
-    <header id="header">
-        <nav id="nav-bar" class="navbar navbar-expand-lg custom-bg fixed-top navbar-transparent">
+    <header id=" header">
+        <nav id="nav-bar" class="navbar navbar-expand-lg custom-bg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="hero_logo.png" id="header-img" alt="LUNA SEA" width="100" height="auto">
+                    <img src="logo.png" id="header-img" alt="LUNA SEA" width="100" height="auto">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,20 +33,20 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <li class="nav-item ms-auto">
                             <a class="nav-link" href="#top">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ms-auto">
                             <a class="nav-link" href="#shop">Shop</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ms-auto">
                             <a class="nav-link" href="#tour">Tour</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ms-auto">
                             <a class="nav-link" href="#about">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#subscribe">Subscribe</a>
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -61,71 +62,91 @@
         </section>
 
         <section id="shop">
-            <div>
+            <div class="justify-content-center text-center">
                 <h1>SHOP</h1>
-                <div class="row justify-content-center text-center">
+                <div class="row mt-3">
                     <div class="col grow">
                         <a href="https://avex.jp/lunasea/mother_style/disc/detail.php?id=1019929" target="_blank"><img
-                                src="MOTHER.jpg" width="300px" alt="MOTHER" /></a>
+                                src="MOTHER.jpg" width="60%" alt="MOTHER" /></a>
                     </div>
                     <div class="col grow"><a href="https://avex.jp/lunasea/mother_style/disc/detail.php?id=1019930"
-                            target="_blank"><img src="STYLE.jpg" width="300px" alt="STYLE" /></a>
+                            target="_blank"><img src="STYLE.jpg" width="60%" alt="STYLE" /></a>
                     </div>
+                </div>
+                <div class="mt-3">
+                    <a href="https://avex.jp/lunasea/mother_style/" target="_blank"><button class="btn btn-light"
+                            type="button">BUY NOW</button></a>
                 </div>
             </div>
         </section>
 
         <section id="tour">
-            <div class="tour">
+            <div class="d-flex flex-column text-center">
                 <h1>DUAL ARENA TOUR 2023</h1>
-                <div class="row justify-content-center text-center">
-                    <div class="col-4 fw-bold">Dates</div>
-                    <div class="col-4 fw-bold">City</div>
+                <h5>MOTHER OF LOVE, MOTHER OF HATE</h5>
+                <h5>UN ENDING STYLE</h5>
+                <div class="row mt-3">
+                    <div class="col fw-bold">Dates</div>
+                    <div class="col fw-bold">City</div>
                 </div>
-                <div class="row justify-content-center text-center">
-                    <div class="col-4">Oct 7-8</div>
-                    <div class="col-4">Yokohama</div>
+                <div class="row">
+                    <div class="col">Oct 7-8</div>
+                    <div class="col">Yokohama</div>
                 </div>
-                <div class="row justify-content-center text-center">
-                    <div class="col-4">Nov 4-5</div>
-                    <div class="col-4">Fukuoka</div>
+                <div class="row">
+                    <div class="col">Nov 4-5</div>
+                    <div class="col">Fukuoka</div>
                 </div>
-                <div class="row justify-content-center text-center">
-                    <div class="col-4">Dec 2-3</div>
-                    <div class="col-4">Sendai</div>
+                <div class="row">
+                    <div class="col">Dec 2-3</div>
+                    <div class="col">Sendai</div>
                 </div>
-                <div class="row justify-content-center text-center">
-                    <div class="col-4">Dec 16-17</div>
-                    <div class="col-4">Nagoya</div>
+                <div class="row">
+                    <div class="col">Dec 16-17</div>
+                    <div class="col">Nagoya</div>
                 </div>
-                <div class="row justify-content-center text-center">
-                    <div class="col-4">Dec 30-31</div>
-                    <div class="col-4">Osaka</div>
+                <div class="row">
+                    <div class="col">Dec 30-31</div>
+                    <div class="col">Osaka</div>
+                </div>
+                <div class="mt-3">
+                    <a href="https://eplus.jp/lunasea/" target="_blank"><button class="btn btn-light" type="button">GET
+                            TICKETS</button></a>
                 </div>
             </div>
+
         </section>
 
         <section id="about">
-            <div>
+            <div id="about-text">
                 <h1>ABOUT</h1>
-                <p class="text-center">
-                    LUNA SEA is a Japanese rock band formed in 1986 in Kanagawa. One of the legendary pioneers of Visual
-                    Kei, they are currently touring Japan in support of their new self-cover albums, MOTHER and STYLE,
+                <p>
+                    LUNA SEA is a Japanese rock band formed in Kanagawa in 1986. One of the legendary pioneers of
+                    Visual
+                    Kei, they are currently touring Japan in support of their new self-cover albums, MOTHER and
+                    STYLE,
                     which were released on November 29, 2023.
                 </p>
             </div>
         </section>
 
-        <section id="subscribe">
+        <section id="contact">
             <div>
                 <h5>Subscribe to LUNA SEA news</h5>
-                <form id="form" action="https://www.freecodecamp.com/email-submit">
-                    <input id="email" type="email" placeholder="Email">
-                    </input>
-                    <input id="submit" type="submit">
-                    </input>
-                </form>
+                <div>
+                    <form id="form" action="https://www.freecodecamp.com/email-submit"
+                        class="d-flex justify-content-center">
+                        <input id="email" type="email" placeholder="Email">
+                        </input>
+                        <input id="submit" type="submit">
+                        </input>
+                    </form>
+                </div>
                 <div class="mt-5 text-center">
+                    <a href="https://lunasea.jp/" target="_blank"><button class="btn btn-light" type="button">OFFICIAL
+                            SITE</button></a>
+                </div>
+                <div class="mt-3 text-center">
                     <a class="icon-link" href="https://twitter.com/LUNASEAOFFICIAL" alt="Twitter" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             class="bi bi-twitter-x icon-white" viewBox="0 0 16 16">
@@ -175,13 +196,14 @@
             </div>
         </section>
 
-        <footer id="footer" class="text-center">
-            <div>
-                made by <a href="https://www.linkedin.com/in/katmohd/" target="_blank">kat</a>
-            </div>
-        </footer>
-
     </main>
+
+    <footer id="footer" class="text-center">
+        <div>
+            Made by <a href="https://www.linkedin.com/in/katmohd/" target="_blank">Kat</a> | Open-sourced on <a
+                href="https://github.com/katmohd/product-landing-page" target="_blank">GitHub</a>
+        </div>
+    </footer>
 
 </body>
 

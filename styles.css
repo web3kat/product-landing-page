@@ -1,20 +1,36 @@
 html {
-    font-family: 'Roboto', sans-serif;
-    font-size: 150%;
-    line-height: 1.4;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 body {
+    position: relative;
+    scroll-snap-type: y mandatory;
+    scroll-snap-points-y: repeat(100vh);
+}
+
+main {
+    height: 100%;
+    position: relative;
+}
+
+section {
+    background: #000000;
+    color: #ffffff;
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
     height: 100vh;
-    margin: 0;
-    overflow: hidden;
+    line-height: 1.4;
+    scroll-snap-align: center;
+    place-items: center;
+    position: relative;
 }
 
 .custom-bg a {
     color: #ffffff;
-    font-size: 16px;
-    padding: 20px;
+    font-family: 'Playfair Display', sans-serif;
+    padding: 0 20px;
 }
 
 .custom-bg a:hover {
@@ -22,47 +38,32 @@ body {
     text-decoration: none;
 }
 
-main {
-    background: #000000;
-    color: #ffffff;
-    height: 100vh;
-    overflow-x: hidden;
-    position: relative;
-    scroll-snap-type: y mandatory;
-}
-
-section {
-    height: 100vh;
-    margin: auto;
-    scroll-snap-align: center;
-    display: grid;
-    place-items: center;
-}
-
 video {
     top: 0;
     left: 0;
     height: 100vh;
+    width: 100vw;
     object-fit: cover;
     position: absolute;
-    width: 100vw;
 }
 
 h1 {
+    font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     line-height: 1.2;
     font-size: 3vw;
     text-align: center;
 }
 
-h5,
-form {
+h5 {
+    font-family: 'Playfair Display', serif;
     text-align: center;
 }
 
 p {
     max-width: 600px;
     margin: 1rem auto;
+    text-align: center;
 }
 
 .grow img {
@@ -76,13 +77,17 @@ p {
     transition: 1s ease;
 }
 
-.tour {
-    display: flex;
-    flex-direction: column;
+#about {
+    background-image: url(LUNASEA.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#subscribe {
-    height: calc(100vh - 100px);
+#about-text {
+    align-self: end;
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
 }
 
 .icon-link {
@@ -98,12 +103,19 @@ p {
 }
 
 footer {
+    align-self: end;
+    background-color: black;
+    color: #ffffff;
     font-size: 10px;
     padding: 10px;
+    position: relative;
+    scroll-snap-stop: always;
+    scroll-snap-align: end;
+    width: 100%;
 }
 
 footer a {
-    color: #ffffff;
+    color: #c0c0c0;
 }
 
 footer a:hover {
@@ -111,14 +123,31 @@ footer a:hover {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 576px) {
-    header {
-        justify-content: center;
-        overflow: hidden;
+@media only screen and (max-width: 800px) {
+    section {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    video {
+        object-fit: contain;
     }
 
     h1 {
         font-size: 36px;
+    }
+
+    .col img {
+        width: 50vw;
+    }
+
+    #about {
+        background-size: contain;
+        padding: 0;
+    }
+
+    #about-text {
+        padding: 20px;
     }
 
 }
