@@ -28,13 +28,21 @@ section {
     position: relative;
 }
 
-.custom-bg a {
+.custom-nav .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 100%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.custom-nav .navbar-toggler {
+    border: 1px solid #ffffff;
+}
+
+.custom-nav a {
     color: #ffffff;
     font-family: 'Playfair Display', sans-serif;
     padding: 0 20px;
 }
 
-.custom-bg a:hover {
+.custom-nav a:hover {
     color: #ff0000;
     text-decoration: none;
 }
