@@ -140,24 +140,28 @@ footer a:hover {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 800px) {
-    section {
-        font-size: 16px;
-    }
-
+@media only screen and (max-width: 992px) {
     video {
         object-fit: contain;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        font-size: 16px;
     }
 
     h1 {
         font-size: 36px;
     }
 
-    .col img {
-        width: 50vw;
-    }
-
     #about {
         background-size: contain;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .col img {
+        width: 50vw;
     }
 }
