@@ -1,6 +1,7 @@
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 body {
@@ -39,7 +40,6 @@ section {
 .custom-nav a {
     color: #ffffff;
     font-family: 'Playfair Display', sans-serif;
-    padding: 0 20px;
 }
 
 .custom-nav a:hover {
@@ -140,13 +140,11 @@ footer a:hover {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
     video {
         object-fit: contain;
     }
-}
 
-@media only screen and (max-width: 768px) {
     section {
         font-size: 16px;
     }
